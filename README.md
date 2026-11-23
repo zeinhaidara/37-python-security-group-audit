@@ -17,6 +17,11 @@ highlights rules open to `0.0.0.0/0` or `::/0` and groups nothing uses.
 > NSG rules across accounts, highlighting overly permissive rules
 > (0.0.0.0/0).
 
+Why it matters: security group rules pile up across accounts, and a rule
+open to the whole internet is easy to miss in the console. One CSV of every
+rule plus a short list of the risky ones gives both an inventory for audits
+and a to-do list for clean-up.
+
 ## How it works
 
 ```mermaid
